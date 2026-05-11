@@ -1,0 +1,43 @@
+# Advanced MiniLang Test 3 - Advanced Features
+print("Variable Scoping:");
+
+let global = "global variable";
+
+{
+    print("Inside block:");
+    let local = "local variable";
+    print(global);
+    print(local);
+    
+    # Shadowing
+    let global = "shadowed global";
+    print(global);
+}
+
+print("Outside block:");
+print(global);
+
+print("Complex Expressions:");
+let a = 10;
+let b = 3;
+
+print("Arithmetic:");
+print("a + b = " + (a + b));
+print("a - b = " + (a - b));
+print("a * b = " + (a * b));
+print("a / b = " + (a / b));
+print("a % b = " + (a % b));
+
+print("Fibonacci Sequence:");
+let n1 = 0;
+let n2 = 1;
+
+print("Fibonacci: " + n1);
+print("Fibonacci: " + n2);
+
+for (let i = 3; i <= 10; i = i + 1) {
+    let next = n1 + n2;
+    print("Fibonacci: " + next);
+    n1 = n2;
+    n2 = next;
+}

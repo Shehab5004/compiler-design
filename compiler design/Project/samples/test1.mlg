@@ -1,0 +1,24 @@
+# Advanced MiniLang Test 1 - Basic Features
+let x = 5;
+let y = 10;
+let name = "MiniLang";
+
+print("Basic Arithmetic:");
+print(x + y);
+print(x * y - 2);
+
+print("String concatenation:");
+let greeting = "Hello, " + name + "!";
+print(greeting);
+
+print("Boolean logic:");
+let is_true = true;
+let is_false = false;
+print(is_true and is_false);
+print(is_true or is_false);
+print(not is_false);
+
+print("Comparisons:");
+print(x < y);
+print(x == 5);
+print(y != 10);

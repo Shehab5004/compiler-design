@@ -1,0 +1,26 @@
+# Advanced MiniLang Test 2 - Control Flow
+print("If-Else Statements:");
+
+let score = 85;
+
+if (score >= 90) {
+    print("Grade: A");
+} else if (score >= 80) {
+    print("Grade: B");
+} else if (score >= 70) {
+    print("Grade: C");
+} else {
+    print("Grade: F");
+}
+
+print("While Loop:");
+let counter = 1;
+while (counter <= 5) {
+    print("Counter: " + counter);
+    counter = counter + 1;
+}
+
+print("For Loop:");
+for (let i = 0; i < 5; i = i + 1) {
+    print("i = " + i);
+}
